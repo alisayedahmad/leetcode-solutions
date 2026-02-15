@@ -1,4 +1,3 @@
-#Valid Parentheses
 class Solution(object):
     def isValid(self, s):
         """
@@ -11,7 +10,6 @@ class Solution(object):
         for char in s:
             if char in mapping:
                 top_element = stack.pop() if stack else '#'
-                print(char, top_element)
                 if mapping[char] != top_element:
                     return False
             else:
